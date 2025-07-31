@@ -29,7 +29,7 @@
     }
 
     @include breakpoint('medium') {
-      max-height: remCalc(600px);
+      max-height: unset;
     }
   }
 
@@ -81,7 +81,7 @@
     }
 
     li {
-      @include carouselOpaqueBackgrounds($slick-dot-bgColor);
+      @include carouselOpaqueBackgrounds(transparent);
     }
   }
 
@@ -169,7 +169,7 @@
     }
 
     @include breakpoint('medium') {
-      max-height: remCalc(600px);
+      max-height: unset;
     }
   }
 }
