@@ -116,6 +116,9 @@
         {{#if brand.name}}
             <p class="card-text" data-test-info-type="brandName">{{brand.name}}</p>
         {{/if}}
+        {{#if sku}}
+            <h3 class="card-title">{{sku}}</h3>
+        {{/if}}
         <h3 class="card-title">
             <a aria-label="{{> components/products/product-info}}"
                href="{{url}}"
