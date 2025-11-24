@@ -114,6 +114,60 @@
                 {{/or}}
             </div>
             {{{region name="product_below_price"}}}
+            <div class="features-title" style="font-size:24px;">
+                Features
+            </div>
+            {{#if product.custom_fields}}
+                <div>
+                    <ul class="list-group">
+                        {{#filter product.custom_fields 'Bullet Point 1' property='name'}}
+                            <li class="list-group-item">
+                                {{{value}}}
+                            </li>
+                        {{/filter}}
+                        {{#filter product.custom_fields 'Bullet Point 2' property='name'}}
+                            <li>
+                                {{{value}}}
+                            </li>
+                        {{/filter}}
+                        {{#filter product.custom_fields 'Bullet Point 3' property='name'}}
+                            <li>
+                                {{{value}}}
+                            </li>
+                        {{/filter}}
+                        {{#filter product.custom_fields 'Bullet Point 4' property='name'}}
+                            <li>
+                                {{{value}}}
+                            </li>
+                        {{/filter}}
+                        {{#filter product.custom_fields 'Bullet Point 5' property='name'}}
+                            <li>
+                                {{{value}}}
+                            </li>
+                        {{/filter}}
+                        {{#filter product.custom_fields 'Bullet Point 6' property='name'}}
+                            <li>
+                                {{{value}}}
+                            </li>
+                        {{/filter}}
+                        {{#filter product.custom_fields 'Bullet Point 7' property='name'}}
+                            <li>
+                                {{{value}}}
+                            </li>
+                        {{/filter}}
+                        {{#filter product.custom_fields 'Bullet Point 8' property='name'}}
+                            <li>
+                                {{{value}}}
+                            </li>
+                        {{/filter}}
+                        {{#filter product.custom_fields 'Bullet Point 9' property='name'}}
+                            <li>
+                                {{{value}}}
+                            </li>
+                        {{/filter}}
+                    </ol>
+                </div>
+            {{/if}}
             <div class="productView-rating">
                 {{#if settings.show_product_rating}}
                     {{> components/products/ratings rating=product.rating}}

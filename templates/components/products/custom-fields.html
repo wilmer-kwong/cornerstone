@@ -1,4 +1,22 @@
 {{#each product.custom_fields}}
-<dt class="productView-info-name">{{name}}:</dt>
-<dd class="productView-info-value">{{{value}}}</dd>
+    {{#unless name '==''Bullet Point 1'}}
+        {{#unless name '==''Bullet Point 2'}}
+            {{#unless name '==''Bullet Point 3'}}
+                {{#unless name '==''Bullet Point 4'}}
+                    {{#unless name '==''Bullet Point 5'}}
+                        {{#unless name '==''Bullet Point 6'}}
+                            {{#unless name '==''Bullet Point 7'}}
+                                {{#unless name '==''Bullet Point 8'}}
+                                    {{#unless name '==''Bullet Point 9'}}
+                                        <dt class="productView-info-name">{{name}}:</dt>
+                                        <dd class="productView-info-value">{{{value}}}</dd>
+                                    {{/unless}}
+                                {{/unless}}
+                            {{/unless}}
+                        {{/unless}}
+                    {{/unless}}
+                {{/unless}}
+            {{/unless}}
+        {{/unless}}
+    {{/unless}}
 {{/each}}
